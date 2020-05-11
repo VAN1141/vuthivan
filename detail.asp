@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HỆ THỐNG TRA CỨU VĂN BẢN PHÁP LUẬT LAO ĐỘNG </title>
+  <title>HỆ THỐNG TRA CỨU VĂN BẢN PHÁP LUẬT LAO ĐỘNG</title>
   <link rel="stylesheet" type="text/css" href="Template/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="Template/css/style.css">
 </head>
@@ -19,7 +19,7 @@
       <!--#Include file="Template/MenuLeft.asp"-->
     </div>
     <div class="col-sm-9 col-lg-10">
-      noi dung
+      <!--#Include file="Template/It_detail.asp"-->
     </div>
   </div>
   <div id="bottom">
