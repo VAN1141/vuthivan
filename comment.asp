@@ -1,4 +1,4 @@
-﻿<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <!--#Include file="Connection/Connection.asp"-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -11,13 +11,13 @@
 <body bgcolor="#FFFFFF" topmargin="0" bottommargin="0">
 <a name="top" id= "top"></a>
 <center>
-  <table width="960" border="0" cellspacing="0" cellpadding="0" bgcolor="#B7B1BF" class="bigtable">
+  <table width="960" border="0" cellspacing="0" cellpadding="0" class="bigtable">
     <tr>
       <td width="960" height="120" colspan="3" valign="top" ><!--#Include file="Template/logo.asp"--></td>
     </tr>
     <tr>
       <td width="740" colspan="2"  class="MenuTop"><!--#Include file="Template/MenuNgang.asp"--></td>
-      <td align="center"  class="MenuLang"><a href="index.asp?ID=<%=rsConn("BaiViet_Id")%>&langs=ja" class="MenuLang" target="_self">&nbsp;Japanese&nbsp;</a>&nbsp;|&nbsp;<a href="index.asp?ID=<%=rsConn("BaiViet_Id")%>&langs=vn" class="MenuLang" target="_self">Vietnamese</a> </td>
+      <td align="center"  class="MenuLang"><a href="comment.asp?langs=ja" class="MenuLang" target="_self">&nbsp;Japanese&nbsp;</a>&nbsp;|&nbsp;<a href="comment.asp?langs=vn" class="MenuLang" target="_self">Vietnamese</a></td>
     </tr>
     <tr>
       <td width="220px" valign="top" bgcolor="#FFFFFF" style="padding:1px 0; border-right:1px #CCCCCC solid;"><!--#Include file="Template/MenuLeft.asp"--></td>
@@ -25,19 +25,7 @@
 	  <!--Nội dung chứa ở đây-->
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td align="center"><iframe id="TopNews" name="TopNews" src="topcontent.asp" height="260" width="516" scrolling="no" frameborder="0">Calender</iframe></td>
-            </tr>
-			 <%
-				msg = request.QueryString("msg")
-				if msg <>"" then
-			  %>
-			  <tr><td align="center"><font style="color:red; font:tahoma; font-size:16px !important; padding:3px 0;"><h2><strong><%=msg%></strong></h2></font></td></tr>
-			  <%end if%>
-	<tr><td valign="top" align="left"><!--#Include file="Template/nghiepvu1.asp"--></td></tr>
-	<tr><td valign="top" align="left"><!--#Include file="Template/thongbao1.asp"--></td></tr>	
-	<tr><td valign="top" align="left"><!--#Include file="Template/tintucsukien1.asp"--></td></tr>	
-<tr>
-              <td valign="top" align="left"><!--#Include file="Template/comment.asp"--></td>
+              <td valign="top" align="left"><!--#Include file="Template/comment_list.asp"--></td>
             </tr>
           </table>
         <!--hết phần Nội dung-->
