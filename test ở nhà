@@ -1,0 +1,147 @@
+
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+
+<html>
+<%
+set conn=Server.CreateObject("ADODB.Connection")
+conn.Provider="Microsoft.Jet.OLEDB.4.0"
+conn.Open "D:/ASP/testsite/db1.mdb"
+
+set rs=Server.CreateObject("ADODB.recordset")
+sql="SELECT NoiDung,vbld from Content where ID=12 order by ID ASC "
+rs.Open sql, conn
+
+%>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tra cuu van ban phap luatj</title>
+</head>
+<body>
+<table>
+<tr>
+<th>
+điều
+</th>
+<th>
+văn bản liên quan
+</th>
+</tr>
+<tr>
+<td >
+<a href="<%=rs("vbld")%>">nghị định 6</a>
+
+</td>
+</tr>
+</table>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="./thu.asp#C101">Jump to Chapter 10</a></p>
+<p><a href="./thu.asp?ID=5#C101">Jump to Chapter 101</a></p>
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+  <h2 id="a640296">2- CKEditor là gì? </h2>
+<h2 >Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+<a  href="#a640261">Giới thiệu</a>
+<%Do While Not rs.Eof%>
+
+<%=rs("NoiDung") %>
+
+  <%
+		rs.MoveNext
+		Loop
+		rs.Close
+	  %>
+	  
+<p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+<ol>
+<li id="C10">Người lao động Việt Nam, người học nghề, tập nghề v&agrave; người lao động kh&aacute;c được quy định tại Bộ luật n&agrave;y.</li>
+<li>Người sử dụng lao động.</li>
+<li>Người lao động nước ngo&agrave;i l&agrave;m việc tại Việt Nam.</li>
+<li>Cơ quan, tổ chức, c&aacute; nh&acirc;n kh&aacute;c c&oacute; li&ecirc;n quan trực tiếp đến quan hệ lao động.</li>
+</ol>
+<p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+<ol>
+<li >Người lao động Việt Nam, người học nghề, tập nghề v&agrave; người lao động kh&aacute;c được quy định tại Bộ luật n&agrave;y.</li>
+<li>Người sử dụng lao động.</li>
+<li>Người lao động nước ngo&agrave;i l&agrave;m việc tại Việt Nam.</li>
+<li>Cơ quan, tổ chức, c&aacute; nh&acirc;n kh&aacute;c c&oacute; li&ecirc;n quan trực tiếp đến quan hệ lao động.</li>
+</ol><p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+<ol>
+<li >Người lao động Việt Nam, người học nghề, tập nghề v&agrave; người lao động kh&aacute;c được quy định tại Bộ luật n&agrave;y.</li>
+<li>Người sử dụng lao động.</li>
+<li>Người lao động nước ngo&agrave;i l&agrave;m việc tại Việt Nam.</li>
+<li>Cơ quan, tổ chức, c&aacute; nh&acirc;n kh&aacute;c c&oacute; li&ecirc;n quan trực tiếp đến quan hệ lao động.</li>
+</ol><p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+....................................
+<ol>
+<li >Người lao động Việt Nam, người học nghề, tập nghề v&agrave; người lao động kh&aacute;c được quy định tại Bộ luật n&agrave;y.</li>
+<li>Người sử dụng lao động.</li>
+<li>Người lao động nước ngo&agrave;i l&agrave;m việc tại Việt Nam.</li>
+<li>Cơ quan, tổ chức, c&aacute; nh&acirc;n kh&aacute;c c&oacute; li&ecirc;n quan trực tiếp đến quan hệ lao động.</li>
+</ol><p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+.
+.
+<ol>
+<li >Người lao động Việt Nam, người học nghề, tập nghề v&agrave; người lao động kh&aacute;c được quy định tại Bộ luật n&agrave;y.</li>
+<li>Người sử dụng lao động.</li>
+<li>Người lao động nước ngo&agrave;i l&agrave;m việc tại Việt Nam.</li>
+<li>Cơ quan, tổ chức, c&aacute; nh&acirc;n kh&aacute;c c&oacute; li&ecirc;n quan trực tiếp đến quan hệ lao động.</li>
+</ol><p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+.
+.
+<ol>
+<li >Người lao động Việt Nam, người học nghề, tập nghề v&agrave; người lao động kh&aacute;c được quy định tại Bộ luật n&agrave;y.</li>
+<li>Người sử dụng lao động.</li>
+<li>Người lao động nước ngo&agrave;i l&agrave;m việc tại Việt Nam.</li>
+<li>Cơ quan, tổ chức, c&aacute; nh&acirc;n kh&aacute;c c&oacute; li&ecirc;n quan trực tiếp đến quan hệ lao động.</li>
+</ol><p><strong>Điều 2. Đối tượng </strong><strong>&aacute;</strong><strong>p dụng</strong></p>
+.
+.
+
+.
+.
+.
+..
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
